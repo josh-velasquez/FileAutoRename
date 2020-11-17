@@ -59,7 +59,7 @@ public class FileAutoRename {
      */
     private static int renameFile(File file, String prefix, int counter, int maxDigit) {
         String fileExt = getFileExtension(file);
-        String newFileName = file.getParent() + "\\" + getNewFileName(prefix, counter, maxDigit, fileExt);
+        String newFileName = file.getParent() + File.separator + getNewFileName(prefix, counter, maxDigit, fileExt);
         try {
             File newFile = new File(newFileName);
             if (!file.renameTo(newFile)) {
