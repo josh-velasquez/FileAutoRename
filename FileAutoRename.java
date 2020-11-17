@@ -40,6 +40,7 @@ public class FileAutoRename {
                     return;
                 }
             }
+            System.out.println("Successfully renamed folder contents.");
         } else {
             System.out.println("Not a valid directory. Please enter a valid directory.");
         }

@@ -9,6 +9,13 @@
             "name": "CodeLens (Launch) - FileAutoRename",
             "request": "launch",
             "mainClass": "FileAutoRename",
+            "projectName": "FileAutoRename_b0ec0470"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileAutoRename",
+            "request": "launch",
+            "mainClass": "FileAutoRename",
             "projectName": "FileNameConverter_17571d2"
         },
         {

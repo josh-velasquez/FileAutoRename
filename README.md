@@ -1,6 +1,16 @@
 # File Auto Rename
 This program allows you to automatically rename contents in a folder based on a counter.
 
+## Sample Output
+Starting contents:  
+![](assets/img0.PNG)
+
+Command line:  
+![](assets/img1.PNG)
+
+Resulting contents:  
+![](assets/img2.PNG)
+
 ## Required input 
 
 ### Folder path
