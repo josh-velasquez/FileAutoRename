@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileAutoRename",
+            "request": "launch",
+            "mainClass": "FileAutoRename",
+            "projectName": "FileNameConverter_17571d2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileRename",
+            "request": "launch",
+            "mainClass": "FileRename",
+            "projectName": "FileNameConverter_17571d2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileNameConverter",
+            "request": "launch",
+            "mainClass": "FileNameConverter",
+            "projectName": "FileNameConverter_17571d2"
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false
+        }
+    ]
+}
