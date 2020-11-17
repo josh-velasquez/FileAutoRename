@@ -33,11 +33,13 @@ public class FileAutoRename {
         File[] directoryListing = dir.listFiles();
         if (directoryListing != null) {
             for (File file : directoryListing) {
-                counter = renameFile(file, prefix, counter, maxDigit);
-                if (counter == -1) {
-                    System.out.println("Failed to rename file: " + file.getName());
-                    // Ask if you would like to continue
-                    return;
+                if (!file.isDirectory()) {
+                    counter = renameFile(file, prefix, counter, maxDigit);
+                    if (counter == -1) {
+                        System.out.println("Failed to rename file: " + file.getName());
+                        // Ask if you would like to continue
+                        return;
+                    }
                 }
             }
             System.out.println("Successfully renamed folder contents.");
