@@ -22,10 +22,8 @@ Ex.
 C:\Users\Folder1\Folder2\TargetFolder
 
 Alternatively, the folder path can be given as a command line argument.
-
-```
+Ex.
 java FileAutoRename test/
-```
 
 ### File prefix
 
