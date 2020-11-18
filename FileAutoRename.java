@@ -6,11 +6,10 @@ public class FileAutoRename {
         Scanner input = new Scanner(System.in);
         String foldername, prefix;
         int start, maxDigit;
+        System.out.println("NOTE: Make sure that the folder is already sorted before running this program!");
         if (args.length > 0) {
             foldername = args[0];
-        }
-        else {
-            System.out.println("NOTE: Make sure that the folder is already sorted before running this program!");
+        } else {
             System.out.print("Enter folder name to change: ");
             foldername = input.nextLine();
         }
