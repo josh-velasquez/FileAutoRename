@@ -6,9 +6,14 @@ public class FileAutoRename {
         Scanner input = new Scanner(System.in);
         String foldername, prefix;
         int start, maxDigit;
-        System.out.println("NOTE: Make sure that the folder is already sorted before running this program!");
-        System.out.print("Enter folder name to change: ");
-        foldername = input.nextLine();
+        if (args.length > 0) {
+            foldername = args[0];
+        }
+        else {
+            System.out.println("NOTE: Make sure that the folder is already sorted before running this program!");
+            System.out.print("Enter folder name to change: ");
+            foldername = input.nextLine();
+        }
         System.out.print("Enter file prefix (ex. 'Episode', press enter for no prefix): ");
         prefix = input.nextLine();
         System.out.print("Enter file counter start (ex. '1'): ");
@@ -21,7 +26,7 @@ public class FileAutoRename {
 
     /**
      * Start of the program. Iterates through the contents of the folder.
-     * 
+     *
      * @param folderName
      * @param prefix
      * @param start
@@ -50,7 +55,7 @@ public class FileAutoRename {
 
     /**
      * Renames the file
-     * 
+     *
      * @param file
      * @param prefix
      * @param counter
@@ -76,7 +81,7 @@ public class FileAutoRename {
 
     /**
      * Gets the file name extension
-     * 
+     *
      * @param file
      * @return
      */
@@ -90,7 +95,7 @@ public class FileAutoRename {
 
     /**
      * Gets the new file to update the old file name
-     * 
+     *
      * @param prefix
      * @param counter
      * @param maxDigit
