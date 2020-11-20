@@ -4,14 +4,17 @@ import java.io.File;
 public class FileAutoRename {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String foldername, prefix;
+        String folderPath, prefix;
         int start, maxDigit;
+        System.out.println("\n\n#############################################");
+        System.out.println("\t\tFILE AUTO RENAME");
+        System.out.println("#############################################\n");
         System.out.println("NOTE: Make sure that the folder is already sorted before running this program!");
         if (args.length > 0) {
-            foldername = args[0];
+            folderPath = args[0];
         } else {
-            System.out.print("Enter folder name to change: ");
-            foldername = input.nextLine();
+            System.out.print("Enter path to folder: ");
+            folderPath = input.nextLine();
         }
         System.out.print("Enter file prefix (ex. 'Episode', press enter for no prefix): ");
         prefix = input.nextLine();
@@ -19,21 +22,21 @@ public class FileAutoRename {
         start = input.nextInt();
         System.out.print("Enter max digit size (ex. '3' if you want 001, 002, etc...): ");
         maxDigit = input.nextInt();
-        startReadFolder(foldername, prefix, start, maxDigit);
+        startReadFolder(folderPath, prefix, start, maxDigit);
         input.close();
     }
 
     /**
      * Start of the program. Iterates through the contents of the folder.
      *
-     * @param folderName
+     * @param folderPath
      * @param prefix
      * @param start
      * @param maxDigit
      */
-    private static void startReadFolder(String folderName, String prefix, int start, int maxDigit) {
+    private static void startReadFolder(String folderPath, String prefix, int start, int maxDigit) {
         int counter = start;
-        File dir = new File(folderName);
+        File dir = new File(folderPath);
         File[] directoryListing = dir.listFiles();
         if (directoryListing != null) {
             for (File file : directoryListing) {
